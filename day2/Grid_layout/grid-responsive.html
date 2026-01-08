@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Cars</title>
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(to right,#4272bf,#c6d2ff,#45527d);
+  font-family:Arial, sans-serif;
+}
+
+.heading{
+  text-align:center;
+  color:#052d0b;
+  margin:15px 0 5px;
+}
+
+.tagline{
+  text-align:center;
+  font-size:16px;
+  color:#475569;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.carcont{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:15px;
+  padding:15px;
+}
+
+.car1{background:#dbeafe;}
+.car2{background:#ffedd5;}
+.car3{background:#fef9c3;}
+.car4{background:#dcfce7;}
+.car5{background:#fce7f3;}
+.car6{background:#e9d5ff;}
+
+.car1,.car2,.car3,.car4,.car5,.car6{
+  padding:12px;
+  text-align:center;
+  font-weight:bold;
+  border:2px solid #01060c;
+  border-radius:10px;
+}
+
+.carcont img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+.cart-btn:hover{
+  background:#1f0c9e;
+}
+.cart-btn{
+  margin-top:10px;
+  padding:8px 14px;
+  font-size:14px;
+  font-weight:bold;
+  color:#fff;
+  background:#1e293b;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+
+
+}
+
+@media (max-width:600px){
+  .tagline{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="heading">SUPER CARS</h1>
+<p class="tagline">Power • Luxury • Performance — The World’s Finest Machines</p>
+
+<div class="carcont">
+
+  <div class="car1">
+    <img src="ferrari296.jpg" alt="Ferrari">
+    <p>Ferrari 296 GTB</p>
+    <p>Cost: ₹7.5 Crore</p>
+    <p>Horse Power: 819 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+  <div class="car2">
+    <img src="porsche911.jpg" alt="Porsche">
+    <p>Porsche 911 Turbo S (992)</p>
+    <p>Cost: ₹3.3 Crore</p>
+    <p>Horse Power: 640 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+  <div class="car3">
+    <img src="mercedes amg.jpg" alt="Mercedes AMG">
+    <p>Mercedes-AMG GT Black Series</p>
+    <p>Cost: ₹4.2 Crore</p>
+    <p>Horse Power: 720 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+  <div class="car4">
+    <img src="jaguarftype.avif" alt="Jaguar">
+    <p>Jaguar F-TYPE R</p>
+    <p>Cost: ₹2.8 Crore</p>
+    <p>Horse Power: 575 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+  <div class="car5">
+    <img src="buggatichiron.avif" alt="Bugatti">
+    <p>Bugatti Chiron Super Sport</p>
+    <p>Cost: ₹22 Crore</p>
+    <p>Horse Power: 1600 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+  <div class="car6">
+    <img src="astonmartin.webp" alt="Aston Martin">
+    <p>Aston Martin Valkyrie</p>
+    <p>Cost: ₹40 Crore</p>
+    <p>Horse Power: 1160 HP</p>
+    <button class="cart-btn">Add to Purchase</button>
+  </div>
+
+</div>
+
+</body>
+</html>
